@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 #Model Template View MTV
-#ORM Object Relational M
+#ORM Object Relational Mapping 
 
 class Curso (models.Model):
     codigo = models.CharField(primary_key=True, max_length=6)

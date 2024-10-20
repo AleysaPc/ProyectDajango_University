@@ -9,4 +9,10 @@ class Curso (models.Model):
     nombre = models.CharField(max_length=50)#como maximo 50 caracteres
     creditos = models.PositiveSmallIntegerField()
 
+    #Para visualizar un formato mas comprensible
+    def __str__(self):
+        texto = "{0} ({1})"
+        return texto.format(self.nombre, self.creditos)
+
+
 
